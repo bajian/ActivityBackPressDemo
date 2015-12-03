@@ -12,7 +12,7 @@ import android.view.View;
 /**
  * public boolean moveTaskToBack(boolean nonRoot)
  activity里有这个方法，参数说明如下：
- nonRoot=false→ 仅当activity为task根（即首个activity例如启动activity之类的）时才生效
+ nonRoot=false→ 仅当activity为task根（即首个activity例如启动activity之类的，会销毁再打开直接执行onStart）时才生效
  nonRoot=true→ 忽略上面的限制
  这个方法不会改变task中的activity中的顺序，效果基本等同于home键
  */
